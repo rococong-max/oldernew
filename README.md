@@ -5,7 +5,7 @@
 ### 2026-04-07
 * 반응형 레이아웃 고려해서 html 수정 
 * html 피드백 내용 정리
-    * 히어로배너 swiper 이름 주기
+    * 띠배너 swiper 이름 주기
     * 슬라이드 바 -> `type:'progressbar'`로 설정해야함 (js)
     * button에 이름 줄때는 id로 주기
     * input type을 search로 바꾸고 name, id 다시 새롭게 주기
@@ -14,3 +14,5 @@
     * 추천 영역 왼쪽 영역 / 오른쪽 영역 묶어주기
     * 리뷰 영역 태그 구성 수정 필요
         * `[div > h1 + {div>btn(prev,next)}] + swiper `
+    * 가장 바깥영역 div에는 id로 주는게 좋음 (div.best_wrap -> div#best_wrap)
+* 피드백 내용 수정 완료
