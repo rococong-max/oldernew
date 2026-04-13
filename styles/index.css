@@ -2,12 +2,51 @@
 /* ==================================== 띠배너 */
 #wrap #top_bnr {
     background-color: #6B32D2;
-    height: 42px;
 } /* bg */
-#wrap #top_bnr .top_bnr_swiper {}
+#wrap #top_bnr .top_bnr_swiper {height: 42px;}
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper {}
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper .swiper-slide {}
-#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .swiper-slide a {}
+#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .swiper-slide a {
+    color: #fff; text-align: center; display: block; line-height: 42px; font-size: 0.75rem;
+}
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide1 {}
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide2 {}
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide3 {}
+
+/* ====================================== main */
+#wrap main
+/* ====================================== fab */
+#wrap main #fab_wrap {
+    position: fixed; right: 32px; bottom: 40px; z-index: 999;
+}
+#wrap main #fab_wrap a {display: block; width: 54px;}
+#wrap main #fab_wrap .top_btn {
+    opacity: 0; transform: translateY(20px); 
+    transition: 0.3s;
+}
+#wrap main #fab_wrap .top_btn.show {opacity: 1; transform: translateY(0); }/* 스크롤을 해서 나타난 상태 */
+#wrap main #fab_wrap .top_btn img {width: 100%;}
+#wrap main #fab_wrap .chat_btn {margin-top: 12px;}
+#wrap main #fab_wrap .chat_btn img {width: 100%;}
+
+/* ====================================== 히어로배너 */
+#wrap main #hero_bnr_wrap {}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper {}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper {}
+/* --------------------------- 공통 swiper-slide */
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide {}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a {
+    display: block; background-position: center; background-size: cover; padding:290px 230px;
+}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title {margin-bottom: 28px;}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title > * {font-size: 2.63rem;}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title p {margin-bottom: 16px;}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title h1 {font-weight: 700;}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt > .detail {font-size: 1.5rem; line-height: 1.5;}
+/* --------------------------- 개별 slide */
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/hero_bnr1.jpg);}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2.jpg);}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3.jpg);}
+/* --------------------------- swiper-pagination */
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .pagi {}

@@ -1,1 +1,45 @@
 /* common.css */
+/* ==================================header */
+#wrap {}
+#wrap header {
+    display: flex; align-items: center; justify-content: space-between; height: 70px;
+    padding: 0 240px;
+}
+#wrap header .h_left {display: flex; align-items: center;}
+#wrap header .h_left #menu_btn {width: 24px; margin-right: 12px;}/* 전체메뉴 펼치기(햄버거 메뉴) */
+#wrap header .h_left #menu_btn img {width: 100%;}
+#wrap header .h_left h1 { margin-right: 34px;}
+#wrap header .h_left h1 a {display: block; width: 145px;}
+#wrap header .h_left h1 a img {width: 100%;}
+#wrap header .h_left .gnb_pc {}
+#wrap header .h_left .gnb_pc a {margin-right: 24px;}
+#wrap header .h_left .gnb_pc a:last-child {margin: 0;}
+#wrap header .h_right {display: flex; align-items: center;}
+#wrap header .h_right #search_box {
+    display: flex; align-items: center;
+    margin-right: 24px; padding: 8px;
+    border-bottom: 1px solid #888;
+    font-size: 0.88rem;
+}
+#wrap header .h_right #search_box #search_txt {
+    background: none; width: 306px; margin-right: 12px;
+}
+#wrap header .h_right #search_box #search_btn {}
+#wrap header .h_right .user_box {}
+#wrap header .h_right .user_box .cart {display: inline-block; width: 24px; margin-right: 14px;}
+#wrap header .h_right .user_box .cart img {width: 100%;}
+#wrap header .h_right .user_box .user {display: inline-block; width: 24px;}
+#wrap header .h_right .user_box .user img {width: 100%;}
+/* 햄버거메뉴 클릭하면 보이는 영역 */
+#wrap #side_menu {display: none;} 
+#wrap #side_menu .menu_top {}
+#wrap #side_menu .menu_top .log_in {}
+#wrap #side_menu .menu_top .log_in a {}
+#wrap #side_menu .menu_top .log_in a img {}
+#wrap #side_menu .menu_top .log_in p {}
+#wrap #side_menu .menu_top #close_btn {}
+#wrap #side_menu .menu_top #close_btn img {}
+#wrap #side_menu .gnb_mobile {} /* mobile(js로 복붙) */
+#wrap #side_menu .lnb {}
+#wrap #side_menu .lnb a {}
+#wrap .overlay {} /* 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) */

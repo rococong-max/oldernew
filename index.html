@@ -42,9 +42,9 @@
         </div>
         <header>
             <div class="h_left">
-                <button type="button" id="menu_btn"><img src="" alt="메뉴 열기"></button><!-- 모바일 환경에서 보여지는 햄버거메뉴 아이콘 -->
-                <h1><a href="#" class="logo"><img src="" alt="올더뮤"></a></h1>
-                <nav calss="gnb_pc"><!-- pc, tablet 용 -->
+                <button type="button" id="menu_btn"><img src="./images/common/menu.png" alt="메뉴 열기"></button><!-- 모바일 환경에서 보여지는 햄버거메뉴 아이콘 -->
+                <h1><a href="#"><img src="./images/common/logo.png" alt="올더뮤"></a></h1>
+                <nav class="gnb_pc"><!-- pc, tablet 용 -->
                     <a href="#">전체상품</a>
                     <a href="#">베스트</a>
                     <a href="#">이벤트</a>
@@ -56,21 +56,21 @@
             <div class="h_right">
                 <form action="#" method="post" id="search_box">
                     <input type="search" name="search_txt" id="search_txt" placeholder="프리카뮤신이 올더뮤로 새롭게 태어났어요!">
-                    <button type="submit" id="search_btn"><img src="" alt="검색하기"></button>
+                    <button type="submit" id="search_btn"><img src="./images/common/search.png" alt="검색하기"></button>
                 </form>
                 <div class="user_box">
-                    <a href="#" class="cart"><img src="" alt="장바구니"></a>
-                    <a href="#" class="user"><img src="" alt="회원"></a>
+                    <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니"></a>
+                    <a href="#" class="user"><img src="./images/common/user.png" alt="회원"></a>
                 </div>
             </div>
         </header>
-        <div class="menu_open"><!-- 햄버거메뉴 클릭하면 보이는 영역 -->
+        <div id="side_menu"><!-- 햄버거메뉴 클릭하면 보이는 영역 -->
             <div class="menu_top">
                     <div class="login">
-                        <a href="#">로그인 / 회원가입<img src="" alt=""></a>
+                        <a href="#">로그인 / 회원가입<img src="./images/common/next.png" alt=""></a>
                         <p>지금 로그인/회원가입하고 풍성한 헤택을 받아보세요!</p>
                     </div>
-                <button type="button" id="close_btn"><img src="" alt="메뉴 닫기"></button>
+                <button type="button" id="close_btn"><img src="./images/common/close.png" alt="메뉴 닫기"></button>
             </div>
             <nav class="gnb_mobile"><!-- mobile(js로 복붙) --></nav>
             <div class="lnb">
@@ -84,8 +84,8 @@
         <div class="overlay"></div><!-- 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) -->
         <main>
             <div id="fab_wrap">
-                <a href="#" class="top"><img src="" alt="위로 올라가기"></a>
-                <a href="#" class="chat"><img src="" alt="채팅상담하기"></a>
+                <a href="#" class="top_btn"><img src="./images/common/top.png" alt="위로 올라가기"></a>
+                <a href="#" class="chat_btn"><img src="./images/common/chat.png" alt="채팅상담하기"></a>
             </div>
             <div id="hero_bnr_wrap">
                 <div class="swiper hero_bnr_swiper">
@@ -93,8 +93,10 @@
                         <div class="swiper-slide slide1">
                             <a href="#"><!-- bg -->
                                 <div class="bnr_txt">
-                                    <p>봄맞이 단독</p>
-                                    <h1>뷰티 페스타 올더뮤 딥글로우 ~58%</h1>
+                                    <div class="title">
+                                        <p>봄맞이 단독</p>
+                                        <h1>뷰티 페스타 올더뮤 딥글로우 ~58%</h1>
+                                    </div>
                                     <p class="detail">환절기에도 들뜸없이 착!<br>봄나들이 가기 전 필수템</p>
                                 </div>
                             </a>
@@ -102,8 +104,10 @@
                         <div class="swiper-slide slide2">
                             <a href="#"><!-- bg -->
                                 <div class="bnr_txt">
-                                    <p>특별한 당신에게 소중한 마음을 담아</p>
-                                    <h1>올더뮤 프리미엄 기프트 세트</h1>
+                                    <div class="title">
+                                        <p>특별한 당신에게 소중한 마음을 담아</p>
+                                        <h1>올더뮤 프리미엄 기프트 세트</h1>
+                                    </div>
                                     <p class="detail">두가지 타입으로 준비된 기프트 세트로<br>당신의 하루를 특별하게 채워보세요!</p>
                                 </div>
                             </a>
@@ -111,8 +115,10 @@
                         <div class="swiper-slide slide3">
                             <a href="#"><!-- bg -->
                                 <div class="bnr_txt">
-                                    <p>가벼운 하루의 시작</p>
-                                    <h1>올더뮤 뮤신 클리어모닝 신제품 출시!</h1>
+                                    <div class="title">
+                                        <p>가벼운 하루의 시작</p>
+                                        <h1>올더뮤 뮤신 클리어모닝 신제품 출시!</h1>
+                                    </div>
                                     <p class="detail">아침마다 화장실 스트레스 없이 편안하게<br>뮤신+유산균5종+푸룬+애사비</p>
                                 </div>
                             </a>
@@ -126,10 +132,10 @@
                 <ul class="best_list">
                     <li class="best_product best1">
                         <div class="best_photo_box">
-                            <a href="#" class="photo"><img src="" alt=""></a>
+                            <a href="#" class="photo"><img src="./images/product/gummy.jpg" alt=""></a>
                             <div class="like_cart">
-                                <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                             </div>
                         </div>
                         <div class="best_txt_box">
@@ -137,15 +143,15 @@
                                 <h2>[라스트] V컷 뮤신구미 ~41%</h2>
                                 <p class="price"><span class=" discount">31%</span><em>19,990원</em><del>20,000원</del></p>
                             </a>
-                            <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 945</span></a>
+                            <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 945</span></a>
                         </div>
                     </li>
                     <li class="best_product best2">
                         <div class="best_photo_box">
-                            <a href="#" class="photo"><img src="" alt=""></a>
+                            <a href="#" class="photo"><img src="./images/product/deepglow.jpg" alt=""></a>
                             <div class="like_cart">
-                                <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                             </div>
                         </div>
                         <div class="best_txt_box">
@@ -153,15 +159,15 @@
                                 <h2>[뷰티페스타] 올더뮤 뮤신 딥글로우 ~58%</h2>
                                 <p class="price"><span class=" discount">24%</span><em>28,900원</em><del>38,000원</del></p>
                             </a>
-                            <a href="#" class="review"><img src="" alt=""><span class="rating">4.8</span><span class="review-count">리뷰 46223</span></a>
+                            <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.8</span><span class="review-count">리뷰 46223</span></a>
                         </div>
                     </li>
                     <li class="best_product best3">
                         <div class="best_photo_box">
-                            <a href="#" class="photo"><img src="" alt=""></a>
+                            <a href="#" class="photo"><img src="./images/product/bounce.jpg" alt=""></a>
                             <div class="like_cart">
-                                <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                             </div>
                         </div>
                         <div class="best_txt_box">
@@ -169,15 +175,15 @@
                                 <h2>뮤신 바운스</h2>
                                 <p class="price"><span class=" discount">17%</span><em>35,900원</em><del>43,000원</del></p>
                             </a>
-                            <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 2190</span></a>
+                            <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 2190</span></a>
                         </div>
                     </li>
                     <li class="best_product best4">
                         <div class="best_photo_box">
-                            <a href="#" class="photo"><img src="" alt=""></a>
+                            <a href="#" class="photo"><img src="./images/product/aqua.jpg" alt=""></a>
                             <div class="like_cart">
-                                <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                             </div>
                         </div>
                         <div class="best_txt_box">
@@ -185,7 +191,7 @@
                                 <h2>뮤신 아쿠아</h2>
                                 <p class="price"><span class=" discount">20%</span><em>36,990원</em><del>46,000원</del></p>
                             </a>
-                            <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 764</span></a>
+                            <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 764</span></a>
                         </div>
                     </li>
                 </ul>
@@ -207,18 +213,18 @@
                             <span>공식몰에서만 만나볼 수 있는 구성으로 더욱 특별하게 경험해보세요!</span></p>
                         <p class="price"><del>47,000원</del><span class="discount">3%</span><em>45,800원</em></p>
                         <div class="more">
-                            <a href="#" class="more_btn">view more<img src="" alt=""></a>
+                            <a href="#" class="more_btn">view more<img src="./images/common/more.png" alt=""></a>
                             <div class="like_cart">
-                                <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper clear_swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide slide1"><img src="" alt=""></div>
-                            <div class="swiper-slide slide2"><img src="" alt=""></div>
-                            <div class="swiper-slide slide3"><img src="" alt=""></div>
+                            <div class="swiper-slide slide1"><img src="./images/main/new_clear1.jpg" alt=""></div>
+                            <div class="swiper-slide slide2"><img src="./images/main/new_clear2.jpg" alt=""></div>
+                            <div class="swiper-slide slide3"><img src="./images/main/new_clear3.jpg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -232,23 +238,23 @@
                         </p>
                         <p class="price"><del>47,000원</del><span class="discount">3%</span><em>45,800원</em></p>
                         <div class="more">
-                            <a href="#" class="more_btn">view more<img src="" alt=""></a>
+                            <a href="#" class="more_btn">view more<img src="./images/common/more.png" alt=""></a>
                             <div class="like_cart">
-                                <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper clear_swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide slide1"><img src="" alt=""></div>
-                            <div class="swiper-slide slide2"><img src="" alt=""></div>
-                            <div class="swiper-slide slide3"><img src="" alt=""></div>
+                            <div class="swiper-slide slide1"><img src="./images/main/new_comport1.jpg" alt=""></div>
+                            <div class="swiper-slide slide2"><img src="./images/main/new_comport2.jpg" alt=""></div>
+                            <div class="swiper-slide slide3"><img src="./images/main/new_comport3.jpg" alt=""></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div di="recommendation_wrap">
+            <div id="recommendation_wrap">
                 <div class="recommendation_left">
                     <h1>나에게 딱 맞는 <span>맞춤 상품 추천</span></h1>
                     <div class="tab">
@@ -262,10 +268,10 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
                                 <div class="rec_photo_box">
-                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <a href="#" class="photo"><img src="./images/product/bounce.jpg" alt=""></a>
                                     <div class="like_cart">
-                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                        <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                                     </div>
                                 </div>
                                 <div class="rec_txt_box">
@@ -273,15 +279,15 @@
                                         <h2>뮤신 바운스</h2>
                                         <p class="price"><span class=" discount">17%</span><em>35,900원</em><del>43,000원</del></p>
                                     </a>
-                                    <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 2190</span></a>
+                                    <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 2190</span></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide2">
                                 <div class="rec_photo_box">
-                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <a href="#" class="photo"><img src="./images/product/gummy.jpg" alt=""></a>
                                     <div class="like_cart">
-                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                        <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                                     </div>
                                 </div>
                                 <div class="rec_txt_box">
@@ -289,15 +295,15 @@
                                         <h2>[라스트] V컷 뮤신구미 ~41%</h2>
                                         <p class="price"><span class=" discount">31%</span><em>19,990원</em><del>20,000원</del></p>
                                     </a>
-                                    <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 945</span></a>
+                                    <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 945</span></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide3">
                                 <div class="rec_photo_box">
-                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <a href="#" class="photo"><img src="./images/product/aqua.jpg" alt=""></a>
                                     <div class="like_cart">
-                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                        <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                                     </div>
                                 </div>
                                 <div class="rec_txt_box">
@@ -305,7 +311,7 @@
                                         <h2>뮤신 아쿠아</h2>
                                         <p class="price"><span class=" discount">20%</span><em>36,990원</em><del>46,000원</del></p>
                                     </a>
-                                    <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 764</span></a>
+                                    <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 764</span></a>
                                 </div>
                             </div>
                         </div>
@@ -314,26 +320,26 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
                                 <div class="rec_photo_box">
-                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <a href="#" class="photo"><img src="./images/product/deepglow.jpg" alt=""></a>
                                     <div class="like_cart">
-                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                        <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                                     </div>
                                 </div>
                                 <div class="rec_txt_box">
                                     <a href="#">
-                                        <h2>[뷰티페스타] 올더뮤 뮤신 더글로우</h2>
+                                        <h2>[뷰티페스타] 올더뮤 뮤신 딥글로우</h2>
                                         <p class="price"><span class=" discount">24%</span><em>28,900원</em><del>38,000원</del></p>
                                     </a>
-                                    <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 46418</span></a>
+                                    <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 46418</span></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide2">
                                 <div class="rec_photo_box">
-                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <a href="#" class="photo"><img src="./images/product/gummy.jpg" alt=""></a>
                                     <div class="like_cart">
-                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                        <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                                     </div>
                                 </div>
                                 <div class="rec_txt_box">
@@ -341,15 +347,15 @@
                                         <h2>[라스트] V컷 뮤신구미 ~41%</h2>
                                         <p class="price"><span class=" discount">31%</span><em>19,990원</em><del>20,000원</del></p>
                                     </a>
-                                    <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 945</span></a>
+                                    <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 945</span></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide3">
                                 <div class="rec_photo_box">
-                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <a href="#" class="photo"><img src="./images/product/bounce.jpg" alt=""></a>
                                     <div class="like_cart">
-                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                        <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                                     </div>
                                 </div>
                                 <div class="rec_txt_box">
@@ -357,7 +363,7 @@
                                         <h2>뮤신 바운스</h2>
                                         <p class="price"><span class=" discount">17%</span><em>35,900원</em><del>43,000원</del></p>
                                     </a>
-                                    <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 2190</span></a>
+                                    <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 2190</span></a>
                                 </div>
                             </div>
                         </div>
@@ -366,10 +372,10 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
                                 <div class="rec_photo_box">
-                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <a href="#" class="photo"><img src="./images/product/clear.jpg" alt=""></a>
                                     <div class="like_cart">
-                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                        <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                                     </div>
                                 </div>
                                 <div class="rec_txt_box">
@@ -377,31 +383,31 @@
                                         <h2>뮤신 클리어모닝 유산균 젤리 2박스</h2>
                                         <p class="price"><span class=" discount">3%</span><em>45,800원</em><del>47,000원</del></p>
                                     </a>
-                                    <a href="#" class="review"><img src="" alt=""><span class="rating">4.9</span><span class="review-count">리뷰 147</span></a>
+                                    <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.9</span><span class="review-count">리뷰 147</span></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide2">
                                 <div class="rec_photo_box">
-                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <a href="#" class="photo"><img src="./images/product/deepglow.jpg" alt=""></a>
                                     <div class="like_cart">
-                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                        <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                                     </div>
                                 </div>
                                 <div class="rec_txt_box">
                                     <a href="#">
-                                        <h2>[뷰티페스타] 올더뮤 뮤신 더글로우</h2>
+                                        <h2>[뷰티페스타] 올더뮤 뮤신 딥글로우</h2>
                                         <p class="price"><span class=" discount">24%</span><em>28,900원</em><del>38,000원</del></p>
                                     </a>
-                                    <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 46418</span></a>
+                                    <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 46418</span></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide3">
                                 <div class="rec_photo_box">
-                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <a href="#" class="photo"><img src="./images/product/aqua.jpg" alt=""></a>
                                     <div class="like_cart">
-                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                        <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니에 담기"></a>
                                     </div>
                                 </div>
                                 <div class="rec_txt_box">
@@ -409,7 +415,7 @@
                                         <h2>뮤신 아쿠아</h2>
                                         <p class="price"><span class=" discount">20%</span><em>36,990원</em><del>46,000원</del></p>
                                     </a>
-                                    <a href="#" class="review"><img src="" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 764</span></a>
+                                    <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review-count">리뷰 764</span></a>
                                 </div>
                             </div>
                         </div>
@@ -445,13 +451,13 @@
                                 </a>
                                 <div class="review_product">
                                     <a href="#" class="product">
-                                        <p class="p_photo"><img src="" alt=""></p>
+                                        <p class="p_photo"><img src="./images/product/deepglow.jpg" alt=""></p>
                                         <div class="p_txt">
                                             <h2>올더뮤 뮤신 딥글로우</h2>
                                             <p class="price"><span class="discount">24%</span><em>28,900원</em><del>38,000원</del></p>
                                         </div>
                                     </a>
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                    <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide2">
@@ -463,13 +469,13 @@
                                 </a>
                                 <div class="review_product">
                                     <a href="#" class="product">
-                                        <p class="p_photo"><img src="" alt=""></p>
+                                        <p class="p_photo"><img src="./images/product/deepglow.jpg" alt=""></p>
                                         <div class="p_txt">
                                             <h2>올더뮤 뮤신 딥글로우</h2>
                                             <p class="price"><span class="discount">24%</span><em>28,900원</em><del>38,000원</del></p>
                                         </div>
                                     </a>
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                    <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide3">
@@ -481,13 +487,13 @@
                                 </a>
                                 <div class="review_product">
                                     <a href="#" class="product">
-                                        <p class="p_photo"><img src="" alt=""></p>
+                                        <p class="p_photo"><img src="./images/product/bounce.jpg" alt=""></p>
                                         <div class="p_txt">
                                             <h2>뮤신 바운스</h2>
                                             <p class="price"><span class="discount">17%</span><em>35,900원</em><del>43,000원</del></p>
                                         </div>
                                     </a>
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                    <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide4">
@@ -499,13 +505,13 @@
                                 </a>
                                 <div class="review_product">
                                     <a href="#" class="product">
-                                        <p class="p_photo"><img src="" alt=""></p>
+                                        <p class="p_photo"><img src="./images/product/deepglow.jpg" alt=""></p>
                                         <div class="p_txt">
                                             <h2>올더뮤 뮤신 딥글로우</h2>
                                             <p class="price"><span class="discount">24%</span><em>28,900원</em><del>38,000원</del></p>
                                         </div>
                                     </a>
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                    <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide5">
@@ -517,13 +523,13 @@
                                 </a>
                                 <div class="review_product">
                                     <a href="#" class="product">
-                                        <p class="p_photo"><img src="" alt=""></p>
+                                        <p class="p_photo"><img src="./images/product/bounce.jpg" alt=""></p>
                                         <div class="p_txt">
                                             <h2>뮤신 바운스</h2>
                                             <p class="price"><span class="discount">17%</span><em>35,900원</em><del>43,000원</del></p>
                                         </div>
                                     </a>
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                    <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide6">
@@ -535,19 +541,19 @@
                                 </a>
                                 <div class="review_product">
                                     <a href="#" class="product">
-                                        <p class="p_photo"><img src="" alt=""></p>
+                                        <p class="p_photo"><img src="./images/product/bounce.jpg" alt=""></p>
                                         <div class="p_txt">
                                             <h2>뮤신 바운스</h2>
                                             <p class="price"><span class="discount">17%</span><em>35,900원</em><del>43,000원</del></p>
                                         </div>
                                     </a>
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                    <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="more_btn">view more<img src="" alt=""></a>
+                <a href="#" class="more_btn">view more<img src="./images/common/more.png" alt=""></a>
             </div>
             <div id="magazin_wrap">
                 <h1>올더뮤 연구소</h1>
@@ -614,16 +620,16 @@
         </main>
         <footer>
             <div class="f_left">
-                <h1 class="f_logo"><img src="#" alt="올더뮤"></h1>
+                <h1 class="f_logo"><img src="./images/common/logo.png" alt="올더뮤"></h1>
                 <div class="customer_service">
                     <address><span class="label">고객센터</span><span class="tel">02-6369-5429</span></address>
                     <p class="tel_time">평일 오전 10시 ~ 오후 5시 (주말/공휴일 휴무)<br>점심 오후 12시 ~ 오후 1시</p>
                 </div>
                 <div class="customer_support">
                     <a href="#" class="faq">FAQ</a>
-                    <a href="#" class="instargram"><img src="" alt="인스타그램 바로가기"></a>
-                    <a href="#" class="kakao"><img src="" alt="카카오톡 문의하기"></a>
-                    <a href="#" class="naver"><img src="" alt="네이버톡톡 문의하기"></a>
+                    <a href="#" class="instargram"><img src="./images/common/instar.png" alt="인스타그램 바로가기"></a>
+                    <a href="#" class="kakao"><img src="./images/common/kakao.png" alt="카카오톡 문의하기"></a>
+                    <a href="#" class="naver"><img src="./images/common/naver.png" alt="네이버톡톡 문의하기"></a>
                 </div>
             </div>
             <div class="f_right">
