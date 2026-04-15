@@ -88,9 +88,9 @@
 #wrap #best_wrap .best_list .best_product .best_txt_box > a {}
 #wrap #best_wrap .best_list .best_product .best_txt_box > a h2 {font-size: 1.06rem; font-weight: 500;}
 #wrap #best_wrap .best_list .best_product .best_txt_box > a .price {margin: 12px 0;}
-#wrap #best_wrap .best_list .best_product .best_txt_box > a .price .discount {}
-#wrap #best_wrap .best_list .best_product .best_txt_box > a .price em {}
-#wrap #best_wrap .best_list .best_product .best_txt_box > a .price del {}
+#wrap #best_wrap .best_list .best_product .best_txt_box > a .price .discount {font-size: 1.19rem; font-weight: 600; color: #6B32D2;}
+#wrap #best_wrap .best_list .best_product .best_txt_box > a .price em {font-size: 1.19rem; font-weight: 600; margin: 4px;}
+#wrap #best_wrap .best_list .best_product .best_txt_box > a .price del {font-size: 0.94rem; font-weight: 400; color: #bbb;}
 #wrap #best_wrap .best_list .best_product .best_txt_box .review {display: flex; align-items: center;}
 #wrap #best_wrap .best_list .best_product .best_txt_box .review img {}
 #wrap #best_wrap .best_list .best_product .best_txt_box .review span {font-size: 0.81rem; transform: translateY(3px);}
@@ -107,27 +107,33 @@
 #wrap #new_wrap .new_title_tab .tab a:last-child {margin: 0;}
 #wrap #new_wrap .new_title_tab .tab a.active {background: #6B32D2; color: #fff;}
 /* --------------------------------------- 탭 안 내용 공통 */
-#wrap #new_wrap .new_product {display: flex; justify-content: space-between;}
+#wrap #new_wrap .new_product {display: flex; justify-content: space-between; align-items: center;}
 /* --------------------------------------- 탭 안 내용 공통 - 텍스트 박스 */
 #wrap #new_wrap .new_product .new_txt_box {}
 #wrap #new_wrap .new_product .new_txt_box > * {margin-bottom: 40px;}
-#wrap #new_wrap .new_product .new_txt_box:last-child {margin: 0;}
-#wrap #new_wrap .new_product .new_txt_box h1 {font-size: 1.88rem; font-weight: 600;}
+#wrap #new_wrap .new_product .new_txt_box:last-child {}
+#wrap #new_wrap .new_product .new_txt_box h1 {font-size: 1.88rem; font-weight: 600; margin-bottom: 50px;}
 #wrap #new_wrap .new_product .new_txt_box .detail {}
 #wrap #new_wrap .new_product .new_txt_box .detail span {display: block; font-size: 0.94rem; line-height: 1.7;}
 #wrap #new_wrap .new_product .new_txt_box .price {}
-#wrap #new_wrap .new_product .new_txt_box .price del {}
-#wrap #new_wrap .new_product .new_txt_box .price .discount {}
-#wrap #new_wrap .new_product .new_txt_box .price em {}
-#wrap #new_wrap .new_product .new_txt_box .more {display: flex; justify-content: space-between; align-items: center;}
+#wrap #new_wrap .new_product .new_txt_box .price del {font-size: 0.94rem; font-weight: 400; color: #bbb;}
+#wrap #new_wrap .new_product .new_txt_box .price .discount {
+    font-size: 1.44rem; font-weight: 600;
+    color: #6B32D2; margin: 4px;
+}
+#wrap #new_wrap .new_product .new_txt_box .price em {font-size: 1.44rem; font-weight: 600;}
+#wrap #new_wrap .new_product .new_txt_box .more {
+    display: flex; justify-content: space-between; align-items: center; margin: 0;
+}
 #wrap #new_wrap .new_product .new_txt_box .more .more_btn {padding: 12px 24px; background-color: #f1f1f1; border-radius: 999px;}
-#wrap #new_wrap .new_product .new_txt_box .more .more_btn img {}
+#wrap #new_wrap .new_product .new_txt_box .more .more_btn span {margin-right: 10px;}
+#wrap #new_wrap .new_product .new_txt_box .more .more_btn img {transform: translateY(3px);}
 #wrap #new_wrap .new_product .new_txt_box .more .like_cart {}
 #wrap #new_wrap .new_product .new_txt_box .more .like_cart a {display: inline-block; width: 24px;}
 #wrap #new_wrap .new_product .new_txt_box .more .like_cart a.like {margin-right: 16px;}
 #wrap #new_wrap .new_product .new_txt_box .more .like_cart a img {width: 100%;}
 /* --------------------------------------- 탭 안 내용 공통 - 스와이퍼 */
-#wrap #new_wrap .new_product .new_swiper {width: 750px;}
+#wrap #new_wrap .new_product .new_swiper {width: 750px; margin:0;}
 #wrap #new_wrap .new_product .new_swiper .swiper-wrapper {}
 #wrap #new_wrap .new_product .new_swiper .swiper-wrapper .swiper-slide {}
 /* --------------------------------------- 탭 안 내용 개별 - 스와이퍼 */

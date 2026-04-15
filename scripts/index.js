@@ -3,9 +3,21 @@
 // DOM - html 태그 선택
 const topBnr = document.querySelector('#top_bnr .top_bnr_swiper');
 const topBtn = document.querySelector('#fab_wrap .top_btn');
-const heroBnr = document.querySelector('#hero_bnr_wrap .hero_bnr_swiper')
+const heroBnr = document.querySelector('#hero_bnr_wrap .hero_bnr_swiper');
+const newProd = document.querySelector('.new_product .new_swiper');
 
-console.log(topBnr,topBtn);
+console.log(topBnr,topBtn,newProd);
+
+// FAB
+// 화면이 일정 길이 만큼 스크롤 되면 top_btn에 .show 클래스명 주기
+window.addEventListener('scroll',function(){
+    // scrollY가 200보다 크면 'show' 클래스 추가, 아니면 제거
+    if(scrollY > 200){
+        topBtn.classList.add('show');
+    } else {
+        topBtn.classList.remove('show');
+    }
+})
 
 // 띠배너 swiper
 const topBnrSwiper = new Swiper(topBnr,{
@@ -26,15 +38,9 @@ const heroBnrSwiper = new Swiper(heroBnr,{
     },
 })
 
-// FAB
-// 화면이 일정 길이 만큼 스크롤 되면 top_btn에 .show 클래스명 주기
-window.addEventListener('scroll',function(){
-    // scrollY가 200보다 크면 'show' 클래스 추가, 아니면 제거
-    if(scrollY > 200){
-        topBtn.classList.add('show');
-    } else {
-        topBtn.classList.remove('show');
-    }
+// 신제품 상품 이미지 swiper
+const newSwiper = new Swiper(newProd,{
+    loop:true,
+    autoplay:{delay:3000,},
+    slidesPerView:1.8,
 })
-
-// 
