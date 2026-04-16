@@ -26,10 +26,10 @@
 }
 #wrap header .h_right #search_box #search_btn {}
 #wrap header .h_right .user_box {}
-#wrap header .h_right .user_box .cart {display: inline-block; width: 24px; margin-right: 14px;}
-#wrap header .h_right .user_box .cart img {width: 100%;}
-#wrap header .h_right .user_box .user {display: inline-block; width: 24px;}
+#wrap header .h_right .user_box .user {display: inline-block; width: 24px; margin-right: 14px;}
 #wrap header .h_right .user_box .user img {width: 100%;}
+#wrap header .h_right .user_box .cart {display: inline-block; width: 24px;}
+#wrap header .h_right .user_box .cart img {width: 100%;}
 /* 햄버거메뉴 클릭하면 보이는 영역 */
 #wrap #side_menu {display: none;} 
 #wrap #side_menu .menu_top {}
@@ -43,9 +43,3 @@
 #wrap #side_menu .lnb {}
 #wrap #side_menu .lnb a {}
 #wrap .overlay {} /* 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) */
-
-/* ===================================================== main 공통 디자인 */
-/* ------------------ 상품 가격 디자인 */
-#wrap .price em {font-size: 1.44rem; font-weight: 600;}
-#wrap .price del {font-size: 0.94rem; font-weight: 400; color: #bbb;}
-#wrap .price .discount {font-size: 1.44rem; font-weight: 600; color: #6B32D2;}
