@@ -8,7 +8,12 @@
     <title>올더뮤</title>
     <!-- 플러그인, 웹글꼴, 파비콘 -->
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <!-- pretendard 웹글꼴 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <!-- prata 웹글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <!--swiper 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -271,15 +276,15 @@
                 <div class="recommendation_left">
                     <h1>나에게 딱 맞는 <span>맞춤 상품 추천</span></h1>
                     <div class="tab">
-                        <a href="#" class="once_day active">하루한번 동안관리</a>
-                        <a href="#" class="v_line">자신있는 V라인</a>
-                        <a href="#" class="mode">빛나는 분위기 관리</a>
+                        <a href="#" data-index="0" class="once_day active">하루한번 동안관리</a>
+                        <a href="#" data-index="1" class="v_line">자신있는 V라인</a>
+                        <a href="#" data-index="2" class="mode">빛나는 분위기 관리</a>
                     </div>
                 </div>
                 <div class="recommendation_right">
                     <div class="swiper once_day_swiper active">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide slide1">
+                            <div class="swiper-slide slide1 active">
                                 <div class="photo_box">
                                     <a href="#" class="photo">
                                         <img class="prod" src="./images/product/bounce.jpg" alt="">
@@ -590,14 +595,50 @@
                                     <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
                                 </div>
                             </div>
+                            <div class="swiper-slide slide7">
+                                <a href="#" class="review_photo_box"><!-- bg -->
+                                    <p class="review_txt">
+                                        <span>이렇게 빠르게 효과를 본 건 처음이에요!</span>
+                                        <span>간편하니까 먹기도 너무 편하고 좋아요.</span>
+                                    </p>
+                                </a>
+                                <div class="review_product">
+                                    <a href="#" class="product">
+                                        <p class="p_photo"><img src="./images/product/bounce.jpg" alt=""></p>
+                                        <div class="p_txt">
+                                            <h2>뮤신 바운스</h2>
+                                            <p class="price"><span class="discount">17%</span><em>35,900원</em><del>43,000원</del></p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide8">
+                                <a href="#" class="review_photo_box"><!-- bg -->
+                                    <p class="review_txt">
+                                        <span>이렇게 빠르게 효과를 본 건 처음이에요!</span>
+                                        <span>간편하니까 먹기도 너무 편하고 좋아요.</span>
+                                    </p>
+                                </a>
+                                <div class="review_product">
+                                    <a href="#" class="product">
+                                        <p class="p_photo"><img src="./images/product/bounce.jpg" alt=""></p>
+                                        <div class="p_txt">
+                                            <h2>뮤신 바운스</h2>
+                                            <p class="price"><span class="discount">17%</span><em>35,900원</em><del>43,000원</del></p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <a href="#" class="more_btn"><span>view more</span><img src="./images/common/more.png" alt=""></a>
             </div>
-            <div id="magazin_wrap">
+            <div id="magazine_wrap">
                 <h1>올더뮤 연구소</h1>
-                <div class="swiper magazine">
+                <div class="swiper magazine_swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide1">
                             <a href="#"><!-- bg -->
@@ -640,6 +681,22 @@
                             </a>
                         </div>
                         <div class="swiper-slide slide6">
+                            <a href="#"><!-- bg -->
+                                <dl>
+                                    <dt><span>피부관리, 바르고 먹는</span><span>듀얼 루틴이 필요한 이유</span></dt>
+                                    <dd>바르고 먹고, 내 피부를 위한 듀얼 루틴</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide7">
+                            <a href="#"><!-- bg -->
+                                <dl>
+                                    <dt><span>피부관리, 바르고 먹는</span><span>듀얼 루틴이 필요한 이유</span></dt>
+                                    <dd>바르고 먹고, 내 피부를 위한 듀얼 루틴</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide8">
                             <a href="#"><!-- bg -->
                                 <dl>
                                     <dt><span>피부관리, 바르고 먹는</span><span>듀얼 루틴이 필요한 이유</span></dt>
