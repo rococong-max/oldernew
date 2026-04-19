@@ -21,12 +21,18 @@
 }
 #wrap main #fab_wrap a {display: block; width: 54px;}
 #wrap main #fab_wrap .top_btn {
-    opacity: 0; transform: translateY(20px); 
+    opacity: 0; transform: translateY(20px); border-radius: 50%;
     transition: 0.3s;
 }
-#wrap main #fab_wrap .top_btn.show {opacity: 1; transform: translateY(0); }/* 스크롤을 해서 나타난 상태 */
+#wrap main #fab_wrap .top_btn.show {opacity: 1; transform: translateY(0);}/* 스크롤을 해서 나타난 상태 */
+#wrap main #fab_wrap .chat_btn:hover,
+#wrap main #fab_wrap .top_btn.show:hover {/* hover 디자인 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+#wrap main #fab_wrap .top_btn img,
+#wrap main #fab_wrap .chat_btn img {display: block;}
 #wrap main #fab_wrap .top_btn img {width: 100%;}
-#wrap main #fab_wrap .chat_btn {margin-top: 12px;}
+#wrap main #fab_wrap .chat_btn {margin-top: 12px; border-radius: 50%; transition: 0.3s;}
 #wrap main #fab_wrap .chat_btn img {width: 100%;}
 
 /* =============================================================== 히어로배너 */
@@ -123,9 +129,14 @@
 #wrap main #new_wrap .new_product .new_txt_box .more {
     display: flex; justify-content: space-between; align-items: center; margin: 0;
 }
-#wrap main #new_wrap .new_product .new_txt_box .more .more_btn {padding: 12px 24px; background-color: #f1f1f1; border-radius: 999px;}
+#wrap main #new_wrap .new_product .new_txt_box .more .more_btn {
+    padding: 12px 24px; background-color: #f1f1f1; border-radius: 999px; transition: 0.3s;
+}
+#wrap main #new_wrap .new_product .new_txt_box .more .more_btn:hover {background-color: #6B32D2;}
+#wrap main #new_wrap .new_product .new_txt_box .more .more_btn:hover span {color: #fff;}
+#wrap main #new_wrap .new_product .new_txt_box .more .more_btn:hover img {transform: translateY(3px) rotate(90deg); filter: brightness(0) invert(1);}
 #wrap main #new_wrap .new_product .new_txt_box .more .more_btn span {margin-right: 10px;}
-#wrap main #new_wrap .new_product .new_txt_box .more .more_btn img {transform: translateY(3px);}
+#wrap main #new_wrap .new_product .new_txt_box .more .more_btn img {transform: translateY(3px); transition: 0.3s;}
 #wrap main #new_wrap .new_product .new_txt_box .more .like_cart {}
 #wrap main #new_wrap .new_product .new_txt_box .more .like_cart a {display: inline-block; width: 24px;}
 #wrap main #new_wrap .new_product .new_txt_box .more .like_cart a.like {margin-right: 16px;}
@@ -218,14 +229,19 @@
     padding: 0 240px; position: relative;
 }
 #wrap main #best_review_wrap .review_title_btn h1 {font-size: 1.69rem; font-weight: 600;}
-/* ------------------------------------------------------------ swiper 버튼 관련 속성 */
+/* ------------------------------------------------------------ swiper 버튼  */
 #wrap main #best_review_wrap .review_title_btn .btn_box {}
 #wrap main #best_review_wrap .review_title_btn .btn_box .prev,
-#wrap main #best_review_wrap .review_title_btn .btn_box .next {width: 40px; height: 40px; border-radius: 50%;}
+#wrap main #best_review_wrap .review_title_btn .btn_box .next {width: 40px; height: 40px; border-radius: 50%; transition: 0.3s;}
 #wrap main #best_review_wrap .review_title_btn .btn_box .prev {right: 288px; left: auto;}
 #wrap main #best_review_wrap .review_title_btn .btn_box .next {right: 240px;}
 #wrap main #best_review_wrap .review_title_btn .btn_box .prev svg,
-#wrap main #best_review_wrap .review_title_btn .btn_box .next svg {color: #000; width: 20px; height: 20px;}
+#wrap main #best_review_wrap .review_title_btn .btn_box .next svg {color: #000; width: 20px; height: 20px; transition: 0.3s;}
+/* ------------------------------------------------------hover 디자인 */
+#wrap main #best_review_wrap .review_title_btn .btn_box .prev:hover,
+#wrap main #best_review_wrap .review_title_btn .btn_box .next:hover {background-color: #6B32D2;}
+#wrap main #best_review_wrap .review_title_btn .btn_box .prev:hover svg,
+#wrap main #best_review_wrap .review_title_btn .btn_box .next:hover svg {color: #fff;}
 #wrap main #best_review_wrap .review_swiper_wrap {margin: 50px 0;}
 #wrap main #best_review_wrap .review_swiper_wrap .review_swiper {width: 100%;}
 #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper {}
@@ -268,10 +284,13 @@
 /* ----------------------------------------------------------- viewmore 버튼  */
 #wrap main #best_review_wrap .more_btn {
     padding: 12px 24px; background-color: #f1f1f1; border-radius: 999px;
-    margin: 0 auto; display: block; width: max-content;
+    margin: 0 auto; display: block; width: max-content; transition: 0.3s;
 }
 #wrap main #best_review_wrap .more_btn span {margin-right: 10px;}
-#wrap main #best_review_wrap .more_btn img {transform: translateY(3px);}
+#wrap main #best_review_wrap .more_btn img {transform: translateY(3px); transition: 0.3s;}
+#wrap main #best_review_wrap .more_btn:hover {background-color: #6B32D2;}
+#wrap main #best_review_wrap .more_btn:hover span {color: #fff;}
+#wrap main #best_review_wrap .more_btn:hover img {transform: translateY(3px) rotate(90deg); filter: brightness(0) invert(1);}
 
 /* ================================================================================= 매거진 영역 */
 #wrap main #magazine_wrap {padding: 100px 0;}
