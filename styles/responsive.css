@@ -7,7 +7,7 @@
     #wrap main #magazine_wrap h1,
     #wrap footer {padding:0 70px;}
     /* 추천 영역 swiper 너비 */
-    #wrap main #recommendation_wrap .recommendation_right .active {width: 1050px;}
+    #wrap main #recommendation_wrap .recommendation_right .active {/* width: 1050px; */}
 }
 @media screen and (max-width:1420px) {/* 너비가 1400px 이하일때 */
     /* 컨테이너 너비 조정 */
@@ -16,8 +16,6 @@
     #wrap main #best_review_wrap .review_title_btn,
     #wrap main #magazine_wrap h1,
     #wrap footer {padding:0 50px;}
-    /* 추천 영역 swiper 너비 */
-    #wrap main #recommendation_wrap .recommendation_right .active {width: 980px;}
 }
 @media screen and (max-width:1290px) {/* 너비가 1280px 이하일때 */
     /* 컨테이너 너비 조정 */
@@ -29,10 +27,6 @@
     /* 검색 영역 가림 */
     #wrap .header_bg header .h_right #search_box {border: 0; margin-right: 18px;}
     #wrap .header_bg header .h_right #search_box #search_txt {display: none;}
-    /* 신제품 swiper 너비  */
-    #wrap main #new_wrap .new_product .new_swiper {width: 590px;}
-    /* 추천 영역 swiper 너비 */
-    #wrap main #recommendation_wrap .recommendation_right .active {width: 900px;}
 }
 @media screen and (max-width:1024px) {/* 너비가 1024px 이하일때 */
     /* 컨테이너 너비 조정 */
