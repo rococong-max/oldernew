@@ -3,35 +3,36 @@
 html {scroll-behavior: smooth;}
 /* ===================================================== header */
 #wrap {}
-#wrap header {
+#wrap .header_bg {position: sticky; top: 0; z-index: 999; background: #fff; }
+#wrap .header_bg header {
     display: flex; align-items: center; justify-content: space-between; height: 70px;
-    position: sticky; top: 0; z-index: 999; background: #fff; padding: 0 240px;
+    max-width: 1440px; margin: 0 auto;
 }
-#wrap header .h_left {display: flex; align-items: center;}
-#wrap header .h_left #menu_btn {width: 24px; margin-right: 12px; display: none;}/* 전체메뉴 펼치기(햄버거 메뉴) */
-#wrap header .h_left #menu_btn img {width: 100%;}
-#wrap header .h_left h1 { margin-right: 34px;}
-#wrap header .h_left h1 a {display: block; width: 145px;}
-#wrap header .h_left h1 a img {width: 100%;}
-#wrap header .h_left .gnb_pc {}
-#wrap header .h_left .gnb_pc a {margin-right: 24px;}
-#wrap header .h_left .gnb_pc a:last-child {margin: 0;}
-#wrap header .h_right {display: flex; align-items: center;}
-#wrap header .h_right #search_box {
+#wrap .header_bg header .h_left {display: flex; align-items: center;}
+#wrap .header_bg header .h_left #menu_btn {width: 24px; margin-right: 12px; display: none;}/* 전체메뉴 펼치기(햄버거 메뉴) */
+#wrap .header_bg header .h_left #menu_btn img {width: 100%;}
+#wrap .header_bg header .h_left h1 { margin-right: 34px;}
+#wrap .header_bg header .h_left h1 a {display: block; width: 145px;}
+#wrap .header_bg header .h_left h1 a img {width: 100%;}
+#wrap .header_bg header .h_left .gnb_pc {}
+#wrap .header_bg header .h_left .gnb_pc a {margin-right: 24px;}
+#wrap .header_bg header .h_left .gnb_pc a:last-child {margin: 0;}
+#wrap .header_bg header .h_right {display: flex; align-items: center;}
+#wrap .header_bg header .h_right #search_box {
     display: flex; align-items: center;
     margin-right: 24px; padding: 8px;
     border-bottom: 1px solid #888;
     font-size: 0.88rem;
 }
-#wrap header .h_right #search_box #search_txt {
+#wrap .header_bg header .h_right #search_box #search_txt {
     background: none; width: 306px; margin-right: 12px;
 }
-#wrap header .h_right #search_box #search_btn {}
-#wrap header .h_right .user_box {}
-#wrap header .h_right .user_box .user {display: inline-block; width: 24px; margin-right: 14px;}
-#wrap header .h_right .user_box .user img {width: 100%;}
-#wrap header .h_right .user_box .cart {display: inline-block; width: 24px;}
-#wrap header .h_right .user_box .cart img {width: 100%;}
+#wrap .header_bg header .h_right #search_box #search_btn {}
+#wrap .header_bg header .h_right .user_box {}
+#wrap .header_bg header .h_right .user_box .user {display: inline-block; width: 24px; margin-right: 14px;}
+#wrap .header_bg header .h_right .user_box .user img {width: 100%;}
+#wrap .header_bg header .h_right .user_box .cart {display: inline-block; width: 24px;}
+#wrap .header_bg header .h_right .user_box .cart img {width: 100%;}
 /* 햄버거메뉴 클릭하면 보이는 영역 */
 #wrap #side_menu {display: none;} 
 #wrap #side_menu .menu_top {}
@@ -46,5 +47,43 @@ html {scroll-behavior: smooth;}
 #wrap #side_menu .lnb a {}
 #wrap .overlay {} /* 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) */
 
+/* ================================================================================= footer */
+#wrap footer {
+    max-width: 1440px; margin: 100px auto;
+    display: grid;
+    grid-template-areas: 
+    "left right"
+    "bottom bottom";
+    row-gap: 40px;
+}
+#wrap footer .f_left {grid-area: left;}
+#wrap footer .f_left .f_logo {}
+#wrap footer .f_left .f_logo img {}
+#wrap footer .f_left .customer_service {margin: 32px 0;}
+#wrap footer .f_left .customer_service address {display: flex; align-items: center; margin-bottom: 8px;}
+#wrap footer .f_left .customer_service address span {font-weight: 600;} /* 공통 */
+#wrap footer .f_left .customer_service address .label {font-size: 0.94rem; margin-right: 12px;}
+#wrap footer .f_left .customer_service address .tel {font-size: 1.44rem;}
+#wrap footer .f_left .customer_service .tel_time {font-size: 0.75rem; line-height: 1.5;}
+#wrap footer .f_left .customer_support {display: flex; gap: 10px;}
+#wrap footer .f_left .customer_support a {}
+#wrap footer .f_left .customer_support a.faq {
+    padding: 8px 37px; background: #6B32D2; border-radius: 99px; color: #fff;
+}
+#wrap footer .f_left .customer_support a.instargram img {}
+#wrap footer .f_left .customer_support a.kakao img {}
+#wrap footer .f_left .customer_support a.naver img {}
+#wrap footer .f_right {grid-area: right; text-align: right;}
+#wrap footer .f_right h2 {margin-bottom: 9px; font-weight: 600;}
+#wrap footer .f_right p {line-height: 1.8; font-size: 0.81rem;}/* p 공통 */
+#wrap footer .f_right address {line-height: 1.8; font-size: 0.81rem;}
+#wrap footer .f_right address+p {}
+#wrap footer .f_bottom {grid-area: bottom; border-top: 0.5px solid #888; padding-top: 24px;}
+#wrap footer .f_bottom a {}
+#wrap footer .f_bottom a:not(:last-child)::after {
+    content: ''; display: inline-block; width: 1px; height: 10px; background: #888; margin:0 16px;
+}
+
 
 /* =================================================== 메인 안 컨텐츠 사이즈 */
+#wrap main .container {max-width: 1440px;}

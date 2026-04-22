@@ -61,11 +61,13 @@ const clearSwiper = new Swiper(newProd[0],{
     loop:true,
     autoplay:{delay:3000,},
     slidesPerView:1.8,
+    spaceBetween : 24,
 })
 const comfortSwiper = new Swiper(newProd[1],{
     loop:true,
     autoplay:{delay:3000,},
     slidesPerView:1.8,
+    spaceBetween : 24,
 })
 
 // 신제품 탭 메뉴 전환
@@ -118,6 +120,10 @@ function tabClickFunc(e){
     // 클릭된 탭과 컨텐츠에 active속성 주기
     recTab[targetI].classList.add('active');
     recProd[targetI].classList.add('active');
+    // 조금 기다렸다가 실행 (setTimeout)
+    setTimeout(function(){
+        recSwipers[targetI].update();
+    }, 50);
 }
 // 위 함수가 탭이 클릭했을 때 실행
 recTab[0].addEventListener('click', tabClickFunc);
@@ -128,12 +134,17 @@ recTab[2].addEventListener('click', tabClickFunc);
 // swiper
 const reviewSwiper = new Swiper(reviewList,{
     spaceBetween:32,
-    slidesPerView: 5,
+    slidesPerView: 1.7,
     centeredSlides:true,
     loop:true,
     navigation:{
         prevEl:'.review_title_btn .btn_box .prev',
         nextEl:'.review_title_btn .btn_box .next',
+    },
+    breakpoints:{
+        640:{slidesPerView: 3,},
+        768:{slidesPerView: 4,},
+        1024:{slidesPerView: 5,},
     },
 })
 

@@ -45,30 +45,32 @@
                 </div>
             </div>
         </div>
-        <header>
-            <div class="h_left">
-                <button type="button" id="menu_btn"><img src="./images/common/menu.png" alt="메뉴 열기"></button><!-- 모바일 환경에서 보여지는 햄버거메뉴 아이콘 -->
-                <h1><a href="#"><img src="./images/common/logo.png" alt="올더뮤"></a></h1>
-                <nav class="gnb_pc"><!-- pc, tablet 용 -->
-                    <a href="#">전체 상품</a>
-                    <a href="#">베스트</a>
-                    <a href="#">이벤트</a>
-                    <a href="#">정기 배송</a>
-                    <a href="#">멤버십</a>
-                    <a href="#">브랜드</a>
-                </nav>
-            </div>
-            <div class="h_right">
-                <form action="#" method="post" id="search_box">
-                    <input type="search" name="search_txt" id="search_txt" placeholder="프리카뮤신이 올더뮤로 새롭게 태어났어요!">
-                    <button type="submit" id="search_btn"><img src="./images/common/search.png" alt="검색하기"></button>
-                </form>
-                <div class="user_box">
-                    <a href="#" class="user"><img src="./images/common/user.png" alt="회원"></a>
-                    <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니"></a>
+        <div class="header_bg">
+            <header>
+                <div class="h_left">
+                    <button type="button" id="menu_btn"><img src="./images/common/menu.png" alt="메뉴 열기"></button><!-- 모바일 환경에서 보여지는 햄버거메뉴 아이콘 -->
+                    <h1><a href="#"><img src="./images/common/logo.png" alt="올더뮤"></a></h1>
+                    <nav class="gnb_pc"><!-- pc, tablet 용 -->
+                        <a href="#">전체 상품</a>
+                        <a href="#">베스트</a>
+                        <a href="#">이벤트</a>
+                        <a href="#">정기 배송</a>
+                        <a href="#">멤버십</a>
+                        <a href="#">브랜드</a>
+                    </nav>
                 </div>
-            </div>
-        </header>
+                <div class="h_right">
+                    <form action="#" method="post" id="search_box">
+                        <input type="search" name="search_txt" id="search_txt" placeholder="프리카뮤신이 올더뮤로 새롭게 태어났어요!">
+                        <button type="submit" id="search_btn"><img src="./images/common/search.png" alt="검색하기"></button>
+                    </form>
+                    <div class="user_box">
+                        <a href="#" class="user"><img src="./images/common/user.png" alt="회원"></a>
+                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니"></a>
+                    </div>
+                </div>
+            </header>
+        </div>
         <div id="side_menu"><!-- 햄버거메뉴 클릭하면 보이는 영역 -->
             <div class="menu_top">
                     <div class="login">
@@ -132,7 +134,7 @@
                     <div class="swiper-pagination bar"></div>
                 </div>
             </div>
-            <div id="best_wrap">
+            <div id="best_wrap" class="container">
                 <h1>BEST</h1>
                 <ul class="best_list">
                     <li class="best_product best1">
@@ -167,7 +169,7 @@
                         </div>
                         <div class="txt_box">
                             <a href="#">
-                                <h2>[뷰티페스타] 올더뮤 뮤신 딥글로우 ~58%</h2>
+                                <h2><span>[뷰티페스타]</span> 올더뮤 뮤신 딥글로우 ~58%</h2>
                                 <p class="price"><span class=" discount">24%</span><em>28,900원</em><del>38,000원</del></p>
                             </a>
                             <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.8</span><span class="review_count">리뷰 46223</span></a>
@@ -213,7 +215,7 @@
                     </li>
                 </ul>
             </div>
-            <div id="new_wrap">
+            <div id="new_wrap" class="container">
                 <div class="new_title_tab">
                     <h1>NEW 올더뮤 헬시라인 출시!</h1>
                     <div class="tab">
@@ -272,7 +274,7 @@
                     </div>
                 </div>
             </div>
-            <div id="recommendation_wrap">
+            <div id="recommendation_wrap" class="container">
                 <div class="recommendation_left">
                     <h1>나에게 딱 맞는 <span>맞춤 상품 추천</span></h1>
                     <div class="tab">
@@ -358,7 +360,7 @@
                                 </div>
                                 <div class="txt_box">
                                     <a href="#">
-                                        <h2>[뷰티페스타] 올더뮤 뮤신 딥글로우</h2>
+                                        <h2><span>[뷰티페스타]</span> 올더뮤 뮤신 딥글로우</h2>
                                         <p class="price"><span class=" discount">24%</span><em>28,900원</em><del>38,000원</del></p>
                                     </a>
                                     <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review_count">리뷰 46418</span></a>
@@ -438,7 +440,7 @@
                                 </div>
                                 <div class="txt_box">
                                     <a href="#">
-                                        <h2>[뷰티페스타] 올더뮤 뮤신 딥글로우</h2>
+                                        <h2><span>[뷰티페스타]</span> 올더뮤 뮤신 딥글로우</h2>
                                         <p class="price"><span class=" discount">24%</span><em>28,900원</em><del>38,000원</del></p>
                                     </a>
                                     <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review_count">리뷰 46418</span></a>

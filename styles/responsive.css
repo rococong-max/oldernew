@@ -1,7 +1,55 @@
 /* responsive.css */
-@media screen and (max-width:1600px) {
-    #wrap header {padding: 0 140px;}
+@media screen and (max-width:1520px) {/* 너비가 1560px 이하일때 */
+    /* 컨테이너 너비 조정 */
+    #wrap .header_bg header, 
+    #wrap main .container,
+    #wrap main #best_review_wrap .review_title_btn,
+    #wrap main #magazine_wrap h1,
+    #wrap footer {padding:0 70px;}
+    /* 추천 영역 swiper 너비 */
+    #wrap main #recommendation_wrap .recommendation_right .active {width: 1050px;}
 }
-@media screen and (max-width:1400px) {
-    #wrap header {padding: 0 100px;}
+@media screen and (max-width:1420px) {/* 너비가 1400px 이하일때 */
+    /* 컨테이너 너비 조정 */
+    #wrap .header_bg header, 
+    #wrap main .container,
+    #wrap main #best_review_wrap .review_title_btn,
+    #wrap main #magazine_wrap h1,
+    #wrap footer {padding:0 50px;}
+    /* 추천 영역 swiper 너비 */
+    #wrap main #recommendation_wrap .recommendation_right .active {width: 980px;}
+}
+@media screen and (max-width:1290px) {/* 너비가 1280px 이하일때 */
+    /* 컨테이너 너비 조정 */
+    #wrap .header_bg header, 
+    #wrap main .container,
+    #wrap main #best_review_wrap .review_title_btn,
+    #wrap main #magazine_wrap h1,
+    #wrap footer {}
+    /* 검색 영역 가림 */
+    #wrap .header_bg header .h_right #search_box {border: 0; margin-right: 18px;}
+    #wrap .header_bg header .h_right #search_box #search_txt {display: none;}
+    /* 신제품 swiper 너비  */
+    #wrap main #new_wrap .new_product .new_swiper {width: 590px;}
+    /* 추천 영역 swiper 너비 */
+    #wrap main #recommendation_wrap .recommendation_right .active {width: 900px;}
+}
+@media screen and (max-width:1024px) {/* 너비가 1024px 이하일때 */
+    /* 컨테이너 너비 조정 */
+    #wrap .header_bg header, 
+    #wrap main .container,
+    #wrap main #best_review_wrap .review_title_btn,
+    #wrap main #magazine_wrap h1,
+    #wrap footer {/* width: 964px; */}
+    /* 신제품 swiper 너비 */
+    #wrap main #new_wrap .new_product .new_swiper {/* width: 574px; */}
+    /* 추천 swiper 너비 */
+    #wrap main #recommendation_wrap .recommendation_right .active {/* width: 766px; */}
+    /* 히어로 배너 영역 */
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a {padding: 0 60px;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title {margin-bottom: 20px;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title > * {font-size: 1.88rem;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title p {margin-bottom: 12px;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title h1 {font-weight: 700;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt > .detail {font-size: 1.25rem; line-height: 1.5;}
 }

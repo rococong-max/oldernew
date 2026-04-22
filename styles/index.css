@@ -42,9 +42,10 @@
 /* --------------------------- 공통 swiper-slide */
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide {}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a {
-    display: block; background-position: center; background-size: cover; height: 85vh; padding: 290px 230px;
+    display: block; height: 85vh; position: relative;
+    background-position: center; background-size: cover; 
 }
-#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {position: absolute; top: 50%; left: 230px; transform: translateY(-50%);}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title {margin-bottom: 28px;}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title > * {font-size: 2.63rem;}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title p {margin-bottom: 16px;}
@@ -63,7 +64,7 @@
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .bar .swiper-pagination-progressbar-fill {background: #6B32D2;}
 
 /* ======================================================================================== 베스트 */
-#wrap main #best_wrap {width: 1440px; margin: 100px auto 200px;}
+#wrap main #best_wrap {/* width: 1440px; */ margin: 100px auto 200px;}
 #wrap main #best_wrap h1 {font-size: 1.69rem; font-weight: 600; margin-bottom: 40px;}
 #wrap main #best_wrap .best_list {display: flex; gap: 18px;}
 /* --------------------------------------- 베스트 상품 공통 */
@@ -102,7 +103,7 @@
 #wrap main #best_wrap .best_list .best_product .txt_box .review .review_count {}
 
 /* ================================================================================= 신제품 영역 */
-#wrap main #new_wrap {width: 1440px; margin: 0 auto 200px;}
+#wrap main #new_wrap {/* width: 1440px; */ margin: 0 auto 200px;}
 /* --------------------------------------- 제목 + 탭 */
 #wrap main #new_wrap .new_title_tab {display: flex; justify-content: space-between; margin-bottom: 32px;}
 #wrap main #new_wrap .new_title_tab h1 {font-size: 1.44rem; font-weight: 600;}
@@ -142,9 +143,10 @@
 #wrap main #new_wrap .new_product .new_txt_box .more .like_cart a.like {margin-right: 16px;}
 #wrap main #new_wrap .new_product .new_txt_box .more .like_cart a img {width: 100%;}
 /* --------------------------------------- 탭 안 내용 공통 - 스와이퍼 */
-#wrap main #new_wrap .new_product .new_swiper {width: 750px; margin:0;}
+#wrap main #new_wrap .new_product .new_swiper {max-width: 750px; margin:0;}
 #wrap main #new_wrap .new_product .new_swiper .swiper-wrapper {}
 #wrap main #new_wrap .new_product .new_swiper .swiper-wrapper .swiper-slide {}
+#wrap main #new_wrap .new_product .new_swiper .swiper-wrapper .swiper-slide img {width: 100%;}
 /* --------------------------------------- 탭 안 내용 개별 - 스와이퍼 */
 #wrap main #new_wrap .new_product .new_swiper .swiper-wrapper .slide1 {}
 #wrap main #new_wrap .new_product .new_swiper .swiper-wrapper .slide2 {}
@@ -156,7 +158,7 @@
 
 /* ================================================================================= 상품추천 영역 */
 #wrap main #recommendation_wrap {
-    width: 1440px; margin: 0 auto 200px;
+    /* width: 1440px; */ margin: 0 auto 200px;
     display: flex; justify-content: space-between;
 }
 #wrap main #recommendation_wrap .recommendation_left {}
@@ -171,19 +173,19 @@
 #wrap main #recommendation_wrap .recommendation_left .tab a:last-child {margin: 0;}
 #wrap main #recommendation_wrap .recommendation_left .tab a.active {background: #6B32D2; color: #fff;}
 #wrap main #recommendation_wrap .recommendation_right {}
-/* ------------------------------------------------ 공통 */
-#wrap main #recommendation_wrap .recommendation_right .swiper {width: 1106px; display: none;}
-#wrap main #recommendation_wrap .recommendation_right .active {width: 1106px; display: block;}
+/* ------------------------------------------------ swiper 공통 */
+#wrap main #recommendation_wrap .recommendation_right .swiper {display: none;}
+#wrap main #recommendation_wrap .recommendation_right .active {max-width: 1106px; display: block;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper {}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide {}
 /* ------------------------------------------------ 공통 이미지 영역 */
-#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box {width: max-content; position: relative; margin-bottom: 18px;}
+#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box {position: relative; margin-bottom: 18px;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box:hover .like_cart {
     opacity: 1; transform: translate(-50%, 0);
 }
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box:hover .photo .prod_hover {opacity: 1;}
-#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo {}
-#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo img {}
+#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo {width: 350px;}
+#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo img {width: 100%;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo .prod_hover {
     position: absolute; top: 0; left: 0; opacity: 0;
     transition: 0.5s;
@@ -227,18 +229,17 @@
 
 /* ================================================================================= 베스트 리뷰 영역 */
 #wrap main #best_review_wrap {margin-bottom: 200px;}
-#wrap main #best_review_wrap > * {margin: 0 auto;}
 #wrap main #best_review_wrap .review_title_btn {
     display: flex; justify-content: space-between; align-items: center;
-    position: relative; padding: 0 240px;
+    position: relative; width: 1440px; margin: 0 auto;
 }
 #wrap main #best_review_wrap .review_title_btn h1 {font-size: 1.69rem; font-weight: 600;}
 /* ------------------------------------------------------------ swiper 버튼  */
 #wrap main #best_review_wrap .review_title_btn .btn_box {}
 #wrap main #best_review_wrap .review_title_btn .btn_box .prev,
 #wrap main #best_review_wrap .review_title_btn .btn_box .next {width: 40px; height: 40px; border-radius: 50%; transition: 0.3s;}
-#wrap main #best_review_wrap .review_title_btn .btn_box .prev {right: 288px; left: auto;}
-#wrap main #best_review_wrap .review_title_btn .btn_box .next {right: 240px;}
+#wrap main #best_review_wrap .review_title_btn .btn_box .prev {right: 48px; left: auto;}
+#wrap main #best_review_wrap .review_title_btn .btn_box .next {right: 0;}
 #wrap main #best_review_wrap .review_title_btn .btn_box .prev svg,
 #wrap main #best_review_wrap .review_title_btn .btn_box .next svg {color: #000; width: 20px; height: 20px; transition: 0.3s;}
 /* ------------------------------------------------------hover 디자인 */
@@ -288,7 +289,7 @@
 /* ----------------------------------------------------------- viewmore 버튼  */
 #wrap main #best_review_wrap .more_btn {
     padding: 12px 24px; background-color: #f1f1f1; border-radius: 999px;
-    display: block; width: max-content; transition: 0.3s;
+    display: block; width: max-content; transition: 0.3s; margin: 0 auto;
 }
 #wrap main #best_review_wrap .more_btn span {margin-right: 10px;}
 #wrap main #best_review_wrap .more_btn img {transform: translateY(3px); transition: 0.3s;}
@@ -298,7 +299,7 @@
 
 /* ================================================================================= 매거진 영역 */
 #wrap main #magazine_wrap {margin-bottom: 200px;}
-#wrap main #magazine_wrap h1 {padding: 0 240px; font-size: 1.69rem; font-weight: 600; margin-bottom: 50px;}
+#wrap main #magazine_wrap h1 {width: 1440px; margin: 0 auto; font-size: 1.69rem; font-weight: 600; margin-bottom: 50px;}
 #wrap main #magazine_wrap .magazine_swiper {}
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper {}
 /* ----------------------------------------------------------- swiper-slide 공통 디자인 */
@@ -327,40 +328,3 @@
 #wrap main #brand_wrap .brand_txt h1 {font-family: 'prata',serif; font-size: 1.63rem; font-weight: 400;}
 #wrap main #brand_wrap .brand_txt h1+p {margin: 24px 0;}
 #wrap main #brand_wrap .brand_txt p {line-height: 1.7;}
-
-/* ================================================================================= footer */
-#wrap footer {
-    padding: 100px 240px;
-    display: grid;
-    grid-template-areas: 
-    "left right"
-    "bottom bottom";
-    row-gap: 40px;
-}
-#wrap footer .f_left {grid-area: left;}
-#wrap footer .f_left .f_logo {}
-#wrap footer .f_left .f_logo img {}
-#wrap footer .f_left .customer_service {margin: 32px 0;}
-#wrap footer .f_left .customer_service address {display: flex; align-items: center; margin-bottom: 8px;}
-#wrap footer .f_left .customer_service address span {font-weight: 600;} /* 공통 */
-#wrap footer .f_left .customer_service address .label {font-size: 0.94rem; margin-right: 12px;}
-#wrap footer .f_left .customer_service address .tel {font-size: 1.44rem;}
-#wrap footer .f_left .customer_service .tel_time {font-size: 0.75rem; line-height: 1.5;}
-#wrap footer .f_left .customer_support {display: flex; gap: 10px;}
-#wrap footer .f_left .customer_support a {}
-#wrap footer .f_left .customer_support a.faq {
-    padding: 8px 37px; background: #6B32D2; border-radius: 99px; color: #fff;
-}
-#wrap footer .f_left .customer_support a.instargram img {}
-#wrap footer .f_left .customer_support a.kakao img {}
-#wrap footer .f_left .customer_support a.naver img {}
-#wrap footer .f_right {grid-area: right; text-align: right;}
-#wrap footer .f_right h2 {margin-bottom: 9px; font-weight: 600;}
-#wrap footer .f_right p {line-height: 1.8; font-size: 0.81rem;}/* p 공통 */
-#wrap footer .f_right address {line-height: 1.8; font-size: 0.81rem;}
-#wrap footer .f_right address+p {}
-#wrap footer .f_bottom {grid-area: bottom; border-top: 0.5px solid #888; padding-top: 24px;}
-#wrap footer .f_bottom a {}
-#wrap footer .f_bottom a:not(:last-child)::after {
-    content: ''; display: inline-block; width: 1px; height: 10px; background: #888; margin:0 16px;
-}
