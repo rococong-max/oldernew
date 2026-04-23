@@ -7,6 +7,10 @@
     #wrap main #best_review_wrap .review_title_btn,
     #wrap main #magazine_wrap h1,
     #wrap footer {padding:0 70px;}
+    /* 히어로배너 개별 slide */
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/hero_bnr1_L.jpg);}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2_L.jpg);}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3_L.jpg);}
     /* 멤버십 배너 영역 */
 }
 
@@ -41,10 +45,6 @@
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title h1 {font-weight: 700;}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title span {display: block;}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt > .detail {font-size: 1.25rem; line-height: 1.5;}
-    /* 히어로배너 개별 slide */
-    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/hero_bnr1_tablet.jpg);}
-    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2_tablet.jpg);}
-    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3_tablet.jpg);}
     /* 컨텐츠 제목 텍스트 값 조정 */
     #wrap main #best_wrap h1,
     #wrap main #recommendation_wrap .recommendation_left h1,

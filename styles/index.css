@@ -43,7 +43,7 @@
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide {}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a {
     display: block; height: 85vh; position: relative;
-    background-position:right; background-size: cover; 
+    background-position: right; background-size: cover; 
 }
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {position: absolute; top: 50%; left: 230px; transform: translateY(-50%);}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title {margin-bottom: 28px;}
@@ -105,7 +105,7 @@
 #wrap main #best_wrap .best_list .best_product .txt_box .review .review_count {}
 
 /* ================================================================================= 신제품 영역 */
-#wrap main #new_wrap {/* width: 1440px; */ margin: 0 auto 200px;}
+#wrap main #new_wrap {margin: 0 auto 200px;}
 /* --------------------------------------- 제목 + 탭 */
 #wrap main #new_wrap .new_title_tab {display: flex; justify-content: space-between; margin-bottom: 32px;}
 #wrap main #new_wrap .new_title_tab h1 {font-size: 1.44rem; font-weight: 600;}
