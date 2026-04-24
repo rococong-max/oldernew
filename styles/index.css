@@ -221,7 +221,7 @@
 #wrap main #membership_bnr_wrap {margin-bottom: 200px;}
 #wrap main #membership_bnr_wrap .membership_bnr {
     display: block; padding: 100px 300px;
-    background-position: right ; background-size: cover;
+    background-position: right; background-size: cover;
     background-image: url(../images/main/membership_bnr.jpg);
 }/* bg */
 #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box {}
