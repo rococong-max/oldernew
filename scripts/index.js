@@ -71,7 +71,6 @@ const clearSwiper = new Swiper(newProd[0],{
     slidesPerView:1.3, /* 모바일 상황에서 보이는 개수 */
     spaceBetween : 24,
     breakpoints:{
-        809:{slidesPerView:1.6,},
         1080:{slidesPerView:1.8,},
     },
 })
@@ -81,7 +80,6 @@ const comfortSwiper = new Swiper(newProd[1],{
     slidesPerView:1.3, /* 모바일 상황에서 보이는 개수 */
     spaceBetween : 24,
     breakpoints:{
-        809:{slidesPerView:1.6,},
         1080:{slidesPerView:1.8,},
     },
 })
@@ -112,12 +110,13 @@ function clearShow(e){
 // 추천 영역 상품 swiper (모바일 상황에서만 swiper 작동되도록).
 
 const recSwiperCommon = {
-    spaceBetween:36,
-    slidesPerView:2, /* 모바일 상황에서 보이는 개수 */
+    spaceBetween:16,
+    slidesPerView:2.2, /* 모바일 상황에서 보이는 개수 */
     observer: true,
     observeParents: true,
     breakpoints:{
-        570:{slidesPerView:3,},
+        600:{slidesPerView:3,spaceBetween:20,},
+        1024:{spaceBetween:28,},
     },
 }
 const onceDaySwiper = new Swiper(onceDayProd,recSwiperCommon)

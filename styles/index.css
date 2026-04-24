@@ -58,7 +58,7 @@
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3.jpg);}
 /* --------------------------- swiper-pagination */
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .bar {
-    width: 870px; height: 3px; top: auto;
+    width: 80%; height: 3px; top: auto;
     bottom: 34px; left: 50%; transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.8);
 }
@@ -116,7 +116,7 @@
 /* --------------------------------------- 탭 안 내용 공통 */
 #wrap main #new_wrap .new_product {display: flex; justify-content: space-between; align-items: center;}
 /* --------------------------------------- 탭 안 내용 공통 - 텍스트 박스 */
-#wrap main #new_wrap .new_product .new_txt_box {min-width: 358px;}
+#wrap main #new_wrap .new_product .new_txt_box {min-width: 358px; margin-right: 20px;}
 #wrap main #new_wrap .new_product .new_txt_box > * {margin-bottom: 40px;}
 #wrap main #new_wrap .new_product .new_txt_box:last-child {}
 #wrap main #new_wrap .new_product .new_txt_box h1 {font-size: 1.88rem; font-weight: 600; margin-bottom: 50px;}

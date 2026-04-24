@@ -90,7 +90,6 @@
     #wrap main #new_wrap .new_product .new_txt_box .more .more_btn span {font-size: 0.88rem;}
     /* 상품 추천 영역 */
     #wrap main #recommendation_wrap .recommendation_left .tab a {font-size: 0.81rem;}
-    /* ------ 공통 텍스트 영역 */
     #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box {}
     #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a {}
     #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a h2,
@@ -129,7 +128,7 @@
     /* footer */
 }
 
-@media screen and (max-width:800px) {/* 너비가 810px 이하일때 */
+@media screen and (max-width:800px) {/* 너비가 800px 이하일때 */
     /* header gnb가 감춰지고 햄버거 메뉴가 보임 */
     #wrap .header_bg header .h_left #menu_btn {display: block;}/* 전체메뉴 펼치기(햄버거 메뉴) */
     #wrap .header_bg header .h_left .gnb_pc {display: none;}
@@ -158,7 +157,34 @@
     #wrap main #recommendation_wrap .recommendation_left .tab a {margin: 0;}
     #wrap main #recommendation_wrap .recommendation_right {width: 100%;}
     /* 멤버십 배너 영역 */
+    #wrap main #membership_bnr_wrap .membership_bnr {padding: 60px 40px;}
     #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1+p span {display: block; line-height: 1.4;}
+}
+
+@media screen and (max-width:660px) {/* 너비가 660px 이하일때 */
+    /* footer 영역 */
+    #wrap footer {display: block; }
+    #wrap footer .f_left {margin-bottom: 20px;}
+    #wrap footer .f_right {text-align: left; margin-bottom: 40px;}
+    /* fab 숨김 처리 */
+    #wrap main #fab_wrap {display: none;}
+
+    /* 히어로 배너 영역 */
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a {background-position: center;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {left: 40px; top: 30%;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title {margin-bottom: 12px;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title > * {font-size: 1.63rem;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title p {margin-bottom: 12px;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title h1 {font-weight: 600;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title span {display: block;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt > .detail {font-size: 1.25rem; line-height: 1.5;}
+    
+    /* 히어로배너 개별 slide */
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/hero_bnr1_m.jpg);}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2_m.jpg);}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3_m.jpg);}
+
+    /* 멤버십 배너 */
 }
 
 @media screen and (max-width:550px) {/* 너비가 500px 이하일때 */
@@ -168,9 +194,27 @@
     #wrap main #best_review_wrap .review_title_btn,
     #wrap main #magazine_wrap h1,
     #wrap footer {padding:0 15px;}
-    /* fab 숨김 처리 */
-    #wrap main #fab_wrap {display: none;}
+
     /* 신제품 영역 */
     #wrap main #new_wrap .new_title_tab {flex-flow: column nowrap; gap: 20px;}
     #wrap main #new_wrap .new_product .new_swiper {width: 100%;}
+
+    /* 멤버십 배너 영역 */
+    #wrap main #membership_bnr_wrap .membership_bnr {padding: 40px 20px; background-image: url(../images/main/membership_bnr_m.jpg);}
+    #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box p {font-size: 0.75rem;}
+    #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1 {font-size: 0.88rem; margin: 8px 0;}
+    #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1+p {font-size: 0.69rem;}
+
+    /* footer */
+    #wrap footer .f_left .customer_service {margin:16px 0;}
+    #wrap footer .f_left .customer_service address .label {font-size:0.88rem;}
+    #wrap footer .f_left .customer_service address .tel {font-size:1.13rem;}
+    #wrap footer .f_left .customer_service .tel_time,
+    #wrap footer .f_left .customer_support a.faq,
+    #wrap footer .f_right p,
+    #wrap footer .f_right address {font-size: 0.69rem;}
+    #wrap footer .f_right h2 {font-size:0.88rem; font-weight: 500;}
+    #wrap footer .f_bottom {text-align: center;}
+    #wrap footer .f_bottom a {font-size: 0.69rem;}
 }
+/*  */
