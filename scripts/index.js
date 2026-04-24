@@ -68,16 +68,21 @@ const heroBnrSwiper = new Swiper(heroBnr,{
 const clearSwiper = new Swiper(newProd[0],{
     loop:true,
     autoplay:{delay:3000,},
-    slidesPerView:1.8, /* 모바일 상황에서 보이는 개수 */
+    slidesPerView:1.3, /* 모바일 상황에서 보이는 개수 */
     spaceBetween : 24,
+    breakpoints:{
+        809:{slidesPerView:1.6,},
+        1080:{slidesPerView:1.8,},
+    },
 })
 const comfortSwiper = new Swiper(newProd[1],{
     loop:true,
     autoplay:{delay:3000,},
-    slidesPerView:1.8, /* 모바일 상황에서 보이는 개수 */
+    slidesPerView:1.3, /* 모바일 상황에서 보이는 개수 */
     spaceBetween : 24,
     breakpoints:{
-        809:{},
+        809:{slidesPerView:1.6,},
+        1080:{slidesPerView:1.8,},
     },
 })
 

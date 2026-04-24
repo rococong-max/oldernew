@@ -116,7 +116,7 @@
 /* --------------------------------------- 탭 안 내용 공통 */
 #wrap main #new_wrap .new_product {display: flex; justify-content: space-between; align-items: center;}
 /* --------------------------------------- 탭 안 내용 공통 - 텍스트 박스 */
-#wrap main #new_wrap .new_product .new_txt_box {}
+#wrap main #new_wrap .new_product .new_txt_box {min-width: 358px;}
 #wrap main #new_wrap .new_product .new_txt_box > * {margin-bottom: 40px;}
 #wrap main #new_wrap .new_product .new_txt_box:last-child {}
 #wrap main #new_wrap .new_product .new_txt_box h1 {font-size: 1.88rem; font-weight: 600; margin-bottom: 50px;}
@@ -145,7 +145,7 @@
 #wrap main #new_wrap .new_product .new_txt_box .more .like_cart a.like {margin-right: 16px;}
 #wrap main #new_wrap .new_product .new_txt_box .more .like_cart a img {width: 100%;}
 /* --------------------------------------- 탭 안 내용 공통 - 스와이퍼 */
-#wrap main #new_wrap .new_product .new_swiper {width: 60%; margin:0;}
+#wrap main #new_wrap .new_product .new_swiper {width:60%;margin: 0;}
 #wrap main #new_wrap .new_product .new_swiper .swiper-wrapper {}
 #wrap main #new_wrap .new_product .new_swiper .swiper-wrapper .swiper-slide {}
 #wrap main #new_wrap .new_product .new_swiper .swiper-wrapper .swiper-slide img {width: 100%;}
@@ -228,6 +228,7 @@
 #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box p {font-size: 1.25rem; font-weight: 500;}
 #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1 {font-size: 1.69rem; font-weight: 600; margin: 16px 0;}
 #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1+p {}
+#wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1+p span {}
 
 /* ================================================================================= 베스트 리뷰 영역 */
 #wrap main #best_review_wrap {margin-bottom: 200px;}
