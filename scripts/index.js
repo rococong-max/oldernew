@@ -157,6 +157,7 @@ const reviewSwiper = new Swiper(reviewList,{
     spaceBetween:32,
     slidesPerView: 1.7, /* 모바일 화면 기준 보이는 슬라이드 개수 */
     centeredSlides:true,
+    autoplay:{delay:3000,},
     loop:true,
     navigation:{
         prevEl:'.review_title_btn .btn_box .prev',
@@ -177,6 +178,7 @@ const magazineSwiper = new Swiper(magazineList, {
     spaceBetween:12,
     slidesPerView: 1.7,/* 모바일 화면 기준 보이는 슬라이드 개수 */
     centeredSlides:true,
+    autoplay:{delay:3000,},
     loop:true,
     breakpoints:{/* --px 이상 일때 보이는 개수 */
         640:{slidesPerView: 2,},
